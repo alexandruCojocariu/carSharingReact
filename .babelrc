@@ -1,0 +1,13 @@
+{
+  "presets": ["meteor"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."]
+      },
+      "import",
+      { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+type Car @mongo(name: "cars") {
+  _id: ID!
+  name: String!
+  type: String!
+  description: String!
+  fueled: Boolean
+  reserved: Boolean
+  reservedById: String
+  reservationStartDate: Date
+  reservationEndDate: Date
+  owner: User @link(to: "ownedCars")
+  coordinates: [Float]
+  createdAt: Date
+  updatedAt: Date
+}

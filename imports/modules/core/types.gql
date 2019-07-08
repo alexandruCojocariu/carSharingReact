@@ -1,0 +1,31 @@
+type Query {
+  findCarsInRadius(input: FindCarsInput!): [Car]
+}
+
+type Mutation {
+  addCar(input: AddCarInput!): Boolean
+  reserveCar(input: ReserveCarInput!): reserveCarPayload!
+}
+
+type reserveCarPayload {
+  success: Boolean!
+}
+
+input AddCarInput {
+  name: String!
+  type: String!
+  fueled: Boolean!
+  description: String!
+  coordinates: [Float]!
+}
+
+input FindCarsInput {
+  coordinates: [Float]!
+  radius: Int!
+}
+
+input ReserveCarInput {
+  carId: String!
+  reservationStartDate: Date!
+  reservationEndDate: Date!
+}

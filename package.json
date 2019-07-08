@@ -1,0 +1,56 @@
+{
+  "name": "carSharingReact",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.3.4",
+    "antd": "^3.20.0",
+    "apollo-cache-inmemory": "^1.6.2",
+    "apollo-client": "^2.6.3",
+    "apollo-link": "^1.2.12",
+    "apollo-link-http": "^1.5.15",
+    "apollo-link-ws": "^1.0.18",
+    "apollo-live-client": "^0.2.1",
+    "apollo-live-server": "^0.2.2",
+    "apollo-morpher": "^0.2.0",
+    "apollo-server-express": "^2.6.7",
+    "apollo-upload-client": "^10.0.1",
+    "graphql": "^14.4.1",
+    "graphql-load": "^0.1.1",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.5",
+    "graphql-type-json": "^0.3.0",
+    "indexof": "0.0.1",
+    "leaflet": "^1.5.1",
+    "lodash": "^4.17.11",
+    "meteor-apollo-accounts": "^2.0.3",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.8.6",
+    "react-geocode": "^0.1.2",
+    "react-leaflet": "^2.4.0",
+    "react-mounter": "^1.2.0",
+    "react-router-dom": "^5.0.1",
+    "simpl-schema": "^1.5.5",
+    "subscriptions-transport-ws": "^0.9.16",
+    "uniforms": "^1.31.1",
+    "uniforms-antd": "^1.31.1",
+    "uuid": "^3.3.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.12.0"
+  }
+}

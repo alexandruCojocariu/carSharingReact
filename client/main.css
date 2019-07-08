@@ -1,0 +1,13 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+#mapid {
+  height: 180px;
+}
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}

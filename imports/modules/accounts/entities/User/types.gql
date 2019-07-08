@@ -1,0 +1,22 @@
+type User @mongo(name: "users") {
+  _id: ID!
+  username: String
+  firstName: String
+  lastName: String
+  email: String
+  profile: UserProfile
+  emails: [UserEmail]
+  roles: [String]
+  ownedCarsIds: [String]
+  ownedCars: [Car] @link(field: "ownedCarsIds")
+}
+
+type UserProfile {
+  firstName: String
+  lastName: String
+}
+
+type UserEmail {
+  address: String
+  verified: Boolean
+}
