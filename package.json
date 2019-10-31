@@ -27,7 +27,7 @@
     "graphql-type-json": "^0.3.0",
     "indexof": "0.0.1",
     "leaflet": "^1.5.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "meteor-apollo-accounts": "^2.0.3",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.8.6",
